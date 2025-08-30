@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Power BI Interview Questions</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 1rem; background: #f9fbfc; color: #222; }
+  header { font-size: 2rem; color: #0366d6; margin-bottom: 1rem; text-align: center; }
+  nav { background: #0366d6; padding: 1rem; text-align: center; margin-bottom: 1rem; }
+  nav a { color: white; margin: 0 0.75rem; text-decoration:none; font-weight: 600; }
+  nav a:hover { text-decoration: underline; }
+  h2, h3 { color: #0654a9; }
+  button.toggle-level {
+    background: #0570e8; border: none; padding: 0.5rem 1rem; color: white;
+    border-radius: 5px; font-size: 1rem; cursor: pointer; margin: 1rem 0 0.5rem 0;
+  }
+  button.toggle-level:hover { background: #034a99; }
+  .level-content { display: none; margin-bottom: 2rem; }
+  .level-content.active { display: block; }
+  details {
+    margin: 0.5rem 0; background: white; padding: 1rem; border-radius: 6px; box-shadow: 0 0 5px #ccc;
+  }
+  summary { cursor: pointer; font-weight: 600; font-size: 1.1rem; }
+  .answer { margin-left: 1.5rem; margin-top: 0.3rem; color: #555; }
+  summary::marker { color: #0366d6; font-size: 1.4rem; }
+  details[open] summary::before { content: "▼ "; color: #0366d6; font-weight: bold; }
+  summary::before { content: "▶ "; color: #0366d6; font-weight: bold; }
+</style>
+<script>
+function toggleContent(id) {
+  const el = document.getElementById(id);
+  if(el.classList.contains('active')) {
+    el.classList.remove('active');
+  } else {
+    el.classList.add('active');
+  }
+}
+</script>
+</head>
+<body>
+
+<header>Power BI Interview Questions</header>
+<nav>
+  <a href="tableau.html">Tableau</a>
+  <a href="python.html">Python</a>
+  <a href="sql.html">SQL</a>
+  <a href="dataanalytics.html">Data Analytics</a>
+  <a href="projectmanagement.html">Project Management</a>
+  <a href="clientmanagement.html">Client Management</a>
+  <a href="machinelearning.html">Machine Learning</a>
+  <a href="deeplearning.html">Deep Learning</a>
+  <a href="index.html">Home</a>
+</nav>
+
+<section>
+  <h2>Beginner Level (33 Questions)</h2>
+  <button class="toggle-level" onclick="toggleContent('powerbi-beginner')">Show/Hide Beginner Questions</button>
+  <div id="powerbi-beginner" class="level-content">
+    <!-- Paste all beginner questions as details here -->
+    <details><summary>What is Power BI?</summary><p class="answer">Power BI is a Microsoft business analytics tool for data visualization and sharing insights.</p></details>
+    <details><summary>What are the key components of Power BI?</summary><p class="answer">Power BI Desktop, Power BI Service, Power BI Mobile, and Power BI Report Server.</p></details>
+    <details><summary>What data sources can Power BI connect to?</summary><p class="answer">Excel, SQL Server, Azure, SharePoint, Google Analytics, and many others.</p></details>
+    <!-- ALL 33 beginner questions here -->
+  </div>
+
+  <h2>Intermediate Level (34 Questions)</h2>
+  <button class="toggle-level" onclick="toggleContent('powerbi-intermediate')">Show/Hide Intermediate Questions</button>
+  <div id="powerbi-intermediate" class="level-content">
+    <!-- Paste all intermediate questions as details here -->
+    <details><summary>What is DAX and how is it different from Excel formulas?</summary><p class="answer">DAX is more powerful for relational data and analytics than Excel formulas.</p></details>
+    <details><summary>Explain CALCULATE function in DAX.</summary><p class="answer">Used to modify filter context for calculations.</p></details>
+    <!-- ALL 34 intermediate questions here -->
+  </div>
+
+  <h2>Advanced Level (33 Questions)</h2>
+  <button class="toggle-level" onclick="toggleContent('powerbi-advanced')">Show/Hide Advanced Questions</button>
+  <div id="powerbi-advanced" class="level-content">
+    <!-- Paste all advanced questions as details here -->
+    <details><summary>How do you implement advanced Row-Level Security with dynamic roles?</summary><p class="answer">Using DAX expressions to filter data based on user metadata.</p></details>
+    <details><summary>Explain the VertiPaq engine in Power BI.</summary><p class="answer">An in-memory columnar database engine supporting compression and fast queries.</p></details>
+    <!-- ALL 33 advanced questions here -->
+  </div>
+</section>
+
+</body>
+</html>
