@@ -57,29 +57,116 @@ function toggleContent(id) {
   <h2>Beginner Level (33 Questions)</h2>
   <button class="toggle-level" onclick="toggleContent('powerbi-beginner')">Show/Hide Beginner Questions</button>
   <div id="powerbi-beginner" class="level-content">
-    <!-- Paste all beginner questions as details here -->
     <details><summary>What is Power BI?</summary><p class="answer">Power BI is a Microsoft business analytics tool for data visualization and sharing insights.</p></details>
     <details><summary>What are the key components of Power BI?</summary><p class="answer">Power BI Desktop, Power BI Service, Power BI Mobile, and Power BI Report Server.</p></details>
     <details><summary>What data sources can Power BI connect to?</summary><p class="answer">Excel, SQL Server, Azure, SharePoint, Google Analytics, and many others.</p></details>
-    <!-- ALL 33 beginner questions here -->
+    <details><summary>What is a Power BI dashboard?</summary><p class="answer">A dashboard is a single-page canvas to monitor important metrics through visuals.</p></details>
+    <details><summary>What is Power Query?</summary><p class="answer">Power Query is a data connection and transformation tool to extract, transform, and load data.</p></details>
+    <details><summary>What is the use of Power BI Desktop?</summary><p class="answer">Used to create reports and data models before publishing to the Power BI service.</p></details>
+    <details><summary>Define 'Dataset' in Power BI.</summary><p class="answer">A collection of data imported or connected that reports and dashboards are based on.</p></details>
+    <details><summary>What is DAX in Power BI?</summary><p class="answer">DAX stands for Data Analysis Expressions, a formula language for computations.</p></details>
+    <details><summary>What are visualizations in Power BI?</summary><p class="answer">Graphs, charts, maps, tables, and cards used to represent data.</p></details>
+    <details><summary>What is the difference between a report and a dashboard?</summary><p class="answer">Report contains multiple pages; dashboards are single pages with pinned visuals from reports.</p></details>
+    <details><summary>What are slicers?</summary><p class="answer">Slicers are visual filters that allow users to slice data by categories.</p></details>
+    <details><summary>What is the Power BI service?</summary><p class="answer">The online SaaS platform where reports and dashboards are published and shared.</p></details>
+    <details><summary>Can Power BI connect live to data sources?</summary><p class="answer">Yes, via DirectQuery mode.</p></details>
+    <details><summary>What is Power BI Gateway?</summary><p class="answer">A bridge to connect on-premises data sources securely with Power BI Service.</p></details>
+    <details><summary>Explain the difference between Import and DirectQuery.</summary><p class="answer">Import loads data into Power BI; DirectQuery queries data live without storing it.</p></details>
+    <details><summary>What is a calculated column?</summary><p class="answer">A new column added to a data table using DAX formulas.</p></details>
+    <details><summary>What is a measure?</summary><p class="answer">A dynamic calculation evaluated on the fly in reports.</p></details>
+    <details><summary>Can you schedule data refresh in Power BI?</summary><p class="answer">Yes, datasets can refresh automatically on a schedule.</p></details>
+    <details><summary>What is Row-Level Security (RLS)?</summary><p class="answer">A security feature restricting data access by user roles.</p></details>
+    <details><summary>What types of relationships exist in Power BI?</summary><p class="answer">One-to-many, many-to-one, and many-to-many.</p></details>
+    <details><summary>What is a Bookmark?</summary><p class="answer">Snapshots of a report's current state to create story-like experiences.</p></details>
+    <details><summary>What is Power BI Q&A?</summary><p class="answer">A natural language query tool to ask questions and get answers in visuals.</p></details>
+    <details><summary>List some common visual types in Power BI.</summary><p class="answer">Bar chart, line chart, pie chart, matrix, card, scatter chart.</p></details>
+    <details><summary>What file formats can Power BI Desktop save to?</summary><p class="answer">.pbix (Power BI Desktop file) and .pbit (template file).</p></details>
+    <details><summary>What is Power BI mobile?</summary><p class="answer">Mobile apps for accessing dashboards and reports on mobile devices.</p></details>
+    <details><summary>What is a Gateway Cluster?</summary><p class="answer">A group of gateways for load balancing and high availability.</p></details>
+    <details><summary>What is the maximum data size Power BI can import?</summary><p class="answer">1 GB per dataset in Power BI Pro; more in Premium.</p></details>
+    <details><summary>What are themes in Power BI?</summary><p class="answer">Predefined color palettes to style reports.</p></details>
+    <details><summary>What is Decomposition Tree visual?</summary><p class="answer">A visual to break down data by dimension hierarchies.</p></details>
+    <details><summary>What is an App Workspace?</summary><p class="answer">A collaborative space for creating and distributing Power BI content.</p></details>
+    <details><summary>What is Power BI Report Server?</summary><p class="answer">An on-premises report server for hosting Power BI reports.</p></details>
+    <details><summary>What is Drill-through?</summary><p class="answer">Feature to navigate from a summary visual to detailed report pages.</p></details>
+    <details><summary>What is a Q&A visual in Power BI?</summary><p class="answer">Allows asking questions in natural language to get visual answers.</p></details>
   </div>
 
   <h2>Intermediate Level (34 Questions)</h2>
   <button class="toggle-level" onclick="toggleContent('powerbi-intermediate')">Show/Hide Intermediate Questions</button>
   <div id="powerbi-intermediate" class="level-content">
-    <!-- Paste all intermediate questions as details here -->
     <details><summary>What is DAX and how is it different from Excel formulas?</summary><p class="answer">DAX is more powerful for relational data and analytics than Excel formulas.</p></details>
     <details><summary>Explain CALCULATE function in DAX.</summary><p class="answer">Used to modify filter context for calculations.</p></details>
-    <!-- ALL 34 intermediate questions here -->
+    <details><summary>What is a function to create time intelligence calculations?</summary><p class="answer">Functions like SAMEPERIODLASTYEAR(), TOTALYTD().</p></details>
+    <details><summary>Difference between calculated column and measure?</summary><p class="answer">Calculated columns add data to tables; measures calculate on report interaction.</p></details>
+    <details><summary>What is filter context in Power BI?</summary><p class="answer">Filters applied to visuals impacting calculation results.</p></details>
+    <details><summary>Explain data modeling best practices in Power BI.</summary><p class="answer">Use star schema, avoid many-to-many relationships, reduce cardinality.</p></details>
+    <details><summary>What is the difference between LEFT JOIN and INNER JOIN in Power Query?</summary><p class="answer">LEFT JOIN keeps all records from left table; INNER JOIN keeps matching records.</p></details>
+    <details><summary>What are the storage modes in Power BI datasets?</summary><p class="answer">Import, DirectQuery, Dual.</p></details>
+    <details><summary>How do you optimize report performance?</summary><p class="answer">Limit visuals, optimize data model, reduce columns, use aggregations.</p></details>
+    <details><summary>What is the difference between Power BI Pro and Premium?</summary><p class="answer">Pro is per-user license; Premium offers dedicated capacity and enhanced performance.</p></details>
+    <details><summary>How can you handle many-to-many relationships in Power BI?</summary><p class="answer">Using bridge tables or composite models.</p></details>
+    <details><summary>What is a composite model?</summary><p class="answer">Capability to combine DirectQuery and Import tables in a single model.</p></details>
+    <details><summary>Explain incremental refresh in Power BI.</summary><p class="answer">Refresh only recent data instead of full dataset to improve performance.</p></details>
+    <details><summary>What are custom visuals?</summary><p class="answer">Third-party or user-developed visuals not included by default.</p></details>
+    <details><summary>What is Power BI dataflows?</summary><p class="answer">Reusable data preparation entities managed in the Power BI service.</p></details>
+    <details><summary>How do you create a hierarchy in Power BI?</summary><p class="answer">By dragging fields to create parent-child data relationships.</p></details>
+    <details><summary>What are calculated tables?</summary><p class="answer">Tables created by DAX based on existing data.</p></details>
+    <details><summary>What is the usage of USERELATIONSHIP function?</summary><p class="answer">To activate an inactive relationship temporarily.</p></details>
+    <details><summary>How do you use the SWITCH function?</summary><p class="answer">To evaluate expressions and return a value based on the first true condition.</p></details>
+    <details><summary>How do you implement dynamic titles in Power BI?</summary><p class="answer">Using DAX measures reflecting user selections.</p></details>
+    <details><summary>What is the difference between ALL and ALLEXCEPT in DAX?</summary><p class="answer">ALL removes all filters; ALLEXCEPT keeps filters on specified columns.</p></details>
+    <details><summary>How is security managed in Power BI?</summary><p class="answer">Via Row-Level Security and App Workspaces permissions.</p></details>
+    <details><summary>What are the Power BI API capabilities?</summary><p class="answer">Embedding content, automation, and management via REST APIs.</p></details>
+    <details><summary>How do you refresh data in Power BI Service?</summary><p class="answer">Manually, scheduled refresh, or via API.</p></details>
+    <details><summary>What is the use of Synoptic Panel visual?</summary><p class="answer">Allows custom map or image overlays for interactive analysis.</p></details>
+    <details><summary>How do you handle data privacy settings?</summary><p class="answer">Through data source privacy levels: Public, Organizational, Private.</p></details>
+    <details><summary>Explain bookmarks and their use cases.</summary><p class="answer">Used to create report storytelling and save views.</p></details>
+    <details><summary>What are aggregations in Power BI?</summary><p class="answer">Pre-aggregated data to improve query speed.</p></details>
+    <details><summary>Explain what is a “What-if” parameter in Power BI.</summary><p class="answer">Allows interactive data scenario testing by what-if analysis.</p></details>
+    <details><summary>What is a Power BI template?</summary><p class="answer">A reusable .pbit file with report structure but no data.</p></details>
+    <details><summary>How is Power BI integrated with Azure?</summary><p class="answer">Through Azure services like Azure Data Lake, Synapse, and Machine Learning.</p></details>
+    <details><summary>What are the limitations of DirectQuery?</summary><p class="answer">Slower performance, restricted DAX, limited transformations.</p></details>
+    <details><summary>How do you handle date tables in Power BI?</summary><p class="answer">Create or import a date/calendar table for time intelligence functions.</p></details>
+    <details><summary>What is the use of the USERNAME() function?</summary><p class="answer">Retrieve user identity in Row-Level Security rules.</p></details>
+    <details><summary>Explain Power BI Premium per capacity licensing.</summary><p class="answer">Dedicated resources shared by multiple users for higher scale.</p></details>
+    <details><summary>What is the use of the RELATED function in DAX?</summary><p class="answer">To lookup values from related tables.</p></details>
+    <details><summary>How do you manage large datasets in Power BI?</summary><p class="answer">Partitioning, aggregations, incremental refresh, optimizing data models.</p></details>
   </div>
 
   <h2>Advanced Level (33 Questions)</h2>
   <button class="toggle-level" onclick="toggleContent('powerbi-advanced')">Show/Hide Advanced Questions</button>
   <div id="powerbi-advanced" class="level-content">
-    <!-- Paste all advanced questions as details here -->
     <details><summary>How do you implement advanced Row-Level Security with dynamic roles?</summary><p class="answer">Using DAX expressions to filter data based on user metadata.</p></details>
     <details><summary>Explain the VertiPaq engine in Power BI.</summary><p class="answer">An in-memory columnar database engine supporting compression and fast queries.</p></details>
-    <!-- ALL 33 advanced questions here -->
+    <details><summary>What is the use of Calculation Groups in Analysis Services?</summary><p class="answer">To simplify and standardize calculations across measures.</p></details>
+    <details><summary>How do you use Aggregations with Composite Models?</summary><p class="answer">Pre-aggregated tables redirect queries for speed with direct query fallback.</p></details>
+    <details><summary>Explain the Optimizer for DAX Queries.</summary><p class="answer">Rewrites queries and optimizes execution plans.</p></details>
+    <details><summary>How can you troubleshoot slow reports?</summary><p class="answer">Using Performance Analyzer, query diagnostics, and DAX Studio.</p></details>
+    <details><summary>What are the best practices for data modeling in large scale Power BI?</summary><p class="answer">Star schema, avoiding bi-directional cross filtering, minimizing cardinality.</p></details>
+    <details><summary>Explain how to use AI visuals in Power BI.</summary><p class="answer">Using features like Key Influencers, Q&A with AI, and cognitive services.</p></details>
+    <details><summary>What is the impact of bi-directional cross-filtering?</summary><p class="answer">Can cause ambiguous relationships and poor performance.</p></details>
+    <details><summary>Describe incremental load in Power BI Premium.</summary><p class="answer">Refreshes only a subset of partitions for big datasets.</p></details>
+    <details><summary>How do you use the performance analyzer?</summary><p class="answer">To identify bottlenecks in report rendering and query performance.</p></details>
+    <details><summary>What is the use of TREATAS in DAX?</summary><p class="answer">Applies the result of a table expression as filters on other tables.</p></details>
+    <details><summary>How do you handle calculated tables performance impact?</summary><p class="answer">Avoid excessive recalculations, optimize DAX, use aggregations.</p></details>
+    <details><summary>Explain XMLA endpoints in Power BI Premium.</summary><p class="answer">Allows external tools to connect and manage datasets.</p></details>
+    <details><summary>What are the limitations of Power BI embedding?</summary><p class="answer">Capacity restrictions, licensing, and API limits.</p></details>
+    <details><summary>Explain the differences between Power BI Desktop, Service, and Report Server from a technical perspective.</summary><p class="answer">Desktop is authoring tool; Service is cloud hosting; Report Server is on-premises.</p></details>
+    <details><summary>How is data lineage tracked in Power BI?</summary><p class="answer">Using lineage view showing data source impact and dependencies.</p></details>
+    <details><summary>How can you connect Power BI with non-Microsoft data sources?</summary><p class="answer">Via connectors, ODBC, REST APIs.</p></details>
+    <details><summary>Explain using the 'EXCEPT' function in DAX.</summary><p class="answer">Returns rows from one table not present in another.</p></details>
+    <details><summary>What are the various storage optimization techniques?</summary><p class="answer">Column reduction, data type optimization, removing unnecessary tables.</p></details>
+    <details><summary>How to create custom connectors for Power BI?</summary><p class="answer">Using Power Query M language and SDK.</p></details>
+    <details><summary>Explain the use of Power BI's Composite Models with DirectQuery for multiple sources.</summary><p class="answer">Combining Import tables and DirectQuery sources in one dataset.</p></details>
+    <details><summary>What is the role of Azure Analysis Services with Power BI?</summary><p class="answer">Hosting models with higher scalability and enterprise security.</p></details>
+    <details><summary>Describe the architecture of Power BI.</summary><p class="answer">Data is ingested via Power BI Desktop, processed by VertiPaq engine, rendered in visuals.</p></details>
+    <details><summary>What is DAX Studio used for?</summary><p class="answer">DAX query authoring and performance tuning.</p></details>
+    <details><summary>Explain Power BI's data refresh hierarchy.</summary><p class="answer">Dataset refresh, gateway, data source.</p></details>
+    <details><summary>What are Personal Gateway and Enterprise Gateway?</summary><p class="answer">Gateway modes for individual users and organizational deployment.</p></details>
+    <details><summary>Outline the steps for migrating reports from Power BI Desktop to Service.</summary><p class="answer">Publish directly or via workspace, configure data sources and permissions.</p></details>
+    <details><summary>How do you handle real-time streaming in Power BI?</summary><p class="answer">Using push datasets and streaming dataflows.</p></details>
+    <details><summary>Discuss best practices for deploying Power BI reports in organizations.</summary><p class="answer">Version control, data governance, security, and training.</p></details>
   </div>
 </section>
 
