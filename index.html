@@ -119,31 +119,7 @@
   &copy; 2025 Tech Interview Questions | Developed by Pradeep Natani
 </footer>
 
-<script>
-  // Insert the entire page's HTML source into the textarea
-  document.getElementById('source-code').textContent = document.documentElement.outerHTML;
 
-  // Copy button functionality
-  document.getElementById('copy-button').addEventListener('click', () => {
-    const textarea = document.getElementById('source-code');
-    textarea.select();
-    textarea.setSelectionRange(0, 99999); // For mobile devices
-    
-    try {
-      const successful = document.execCommand('copy');
-      if(successful) {
-        alert('Page HTML source copied to clipboard!');
-      } else {
-        alert('Failed to copy. Please manually select and copy.');
-      }
-    } catch(err) {
-      alert('Copy command not supported in your browser.');
-    }
-    
-    // Deselect text
-    window.getSelection().removeAllRanges();
-  });
-</script>
 
 </body>
 </html>
