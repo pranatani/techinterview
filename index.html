@@ -1,77 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tech Interview Questions - Power BI & Tableau</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 1rem; background: #f5f7fa; color: #333; }
-    h2 { color: #0366d6; border-bottom: 2px solid #0366d6; padding-bottom: 0.3rem; }
-    h3 { color: #0b63ce; margin-top: 1.5rem; }
-    details { background: white; margin: 0.5rem 0; border-radius: 5px; padding: 0.5rem 1rem; box-shadow: 0 0 5px #ccc; }
-    summary { cursor: pointer; font-weight: 600; }
-    summary::marker { font-size: 1.25em; color: #0366d6; }
-    .answer { margin-left: 1.5rem; margin-top: 0.3rem; color: #555; }
-    nav a { margin-right: 1rem; text-decoration:none; color: #0366d6; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tech Interview Questions - All Topics</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 1rem; background: #f9fbfc; color: #222; }
+  header { font-size: 2rem; font-weight: bold; color: #0366d6; margin-bottom: 1rem; text-align:center;}
+  nav { background: #0366d6; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 1000;}
+  nav a { color: #fff; margin: 0 0.75rem; text-decoration: none; font-weight: 600; }
+  nav a:hover { text-decoration: underline; }
+  h2 { border-bottom: 2px solid #0366d6; padding-bottom: 0.3rem; margin-top: 2rem; }
+  h3 { color: #0654a9; margin-top: 1.5rem; }
+  details { margin: 0.5rem 0; background: #fff; padding: 0.6rem 1rem; border-radius: 6px; box-shadow: 0 0 4px #ccc; }
+  summary { cursor: pointer; font-weight: 600; font-size: 1.05rem; }
+  .answer { margin-left: 1.5rem; margin-top: 0.4rem; color: #555; line-height: 1.4; }
+  summary::marker { color: #0366d6; font-size: 1.4rem; }
+  details[open] summary::before { content: "▼ "; color: #0366d6; font-weight: 600; }
+  summary::before { content: "▶ "; color: #0366d6; font-weight: 600; }
+  @media (max-width: 600px) {
+    nav a { display: block; margin: 0.3rem 0; }
+  }
+</style>
 </head>
 <body>
 
+<header>Tech Interview Questions - All Topics</header>
 <nav>
   <a href="#powerbi">Power BI</a>
   <a href="#tableau">Tableau</a>
-  <!-- Add links for other topics -->
+  <a href="#python">Python</a>
+  <a href="#sql">SQL</a>
+  <a href="#dataanalytics">Data Analytics</a>
+  <a href="#projectmanagement">Project Management</a>
+  <a href="#clientmanagement">Client Management</a>
+  <a href="#machinelearning">Machine Learning</a>
+  <a href="#deeplearning">Deep Learning</a>
 </nav>
 
+<!-- Power BI Section -->
 <section id="powerbi">
   <h2>Power BI Interview Questions</h2>
-
-  <h3>Beginner (33 Questions)</h3>
-  <!-- Beginner Questions Power BI -->
+  <h3>Beginner</h3>
+  
+  <!-- Example question -->
   <details><summary>What is Power BI?</summary><p class="answer">Power BI is a Microsoft business analytics tool for data visualization and sharing insights.</p></details>
-  <details><summary>What are the key components of Power BI?</summary><p class="answer">Power BI Desktop, Power BI Service, Power BI Mobile, and Power BI Report Server.</p></details>
-  <details><summary>What data sources can Power BI connect to?</summary><p class="answer">Excel, SQL Server, Azure, SharePoint, Google Analytics, and many others.</p></details>
-  <!-- ...repeat for all 33 beginner questions here--->
+  <!-- Repeat for all 33 beginner questions for Power BI -->
 
-  <h3>Intermediate (34 Questions)</h3>
-  <!-- Intermediate Questions Power BI -->
-  <details><summary>What is DAX and how is it different from Excel formulas?</summary><p class="answer">DAX is more powerful for relational data and analytics than Excel formulas.</p></details>
-  <details><summary>Explain CALCULATE function in DAX.</summary><p class="answer">Used to modify filter context for calculations.</p></details>
-  <details><summary>How do you optimize report performance?</summary><p class="answer">Limit visuals, optimize data model, reduce columns, use aggregations.</p></details>
-  <!-- ...repeat for all 34 intermediate questions here -->
+  <h3>Intermediate</h3>
+  <!-- Repeat for all 34 intermediate questions for Power BI -->
 
-  <h3>Advanced (33 Questions)</h3>
-  <!-- Advanced Questions Power BI -->
-  <details><summary>How do you implement advanced Row-Level Security with dynamic roles?</summary><p class="answer">Using DAX expressions to filter data based on user metadata.</p></details>
-  <details><summary>Explain the VertiPaq engine in Power BI.</summary><p class="answer">An in-memory columnar database engine supporting compression and fast queries.</p></details>
-  <details><summary>How do you troubleshoot slow reports?</summary><p class="answer">Using Performance Analyzer, query diagnostics, and DAX Studio.</p></details>
-  <!-- ...repeat all 33 advanced questions here -->
+  <h3>Advanced</h3>
+  <!-- Repeat for all 33 advanced questions for Power BI -->
 </section>
 
+<!-- Tableau Section -->
 <section id="tableau">
   <h2>Tableau Interview Questions</h2>
+  <h3>Beginner</h3>
+  <!-- 33 beginner questions -->
 
-  <h3>Beginner (33 Questions)</h3>
-  <details><summary>What is Tableau?</summary><p class="answer">Tableau is a data visualization tool used to convert raw data into an understandable format with interactive dashboards.</p></details>
-  <details><summary>What are the different Tableau products?</summary><p class="answer">Tableau Desktop, Tableau Server, Tableau Online, Tableau Prep, Tableau Public.</p></details>
-  <details><summary>What types of data connections does Tableau support?</summary><p class="answer">Live connection and Extract connection to various sources like Excel, SQL, Hadoop, cloud databases.</p></details>
-  <!-- ...repeat all 33 beginner questions here -->
+  <h3>Intermediate</h3>
+  <!-- 34 intermediate questions -->
 
-  <h3>Intermediate (34 Questions)</h3>
-  <details><summary>What is a context filter and how does it improve performance?</summary><p class="answer">Context filter generates a temporary table that other filters act upon improving speed.</p></details>
-  <details><summary>Explain LOD (Level of Detail) Expressions.</summary><p class="answer">Allow calculations at granularities different from the view's.</p></details>
-  <details><summary>How do you create dynamic titles in Tableau?</summary><p class="answer">Using calculated fields or parameters in the title text.</p></details>
-  <!-- ...repeat all 34 intermediate questions here -->
-
-  <h3>Advanced (33 Questions)</h3>
-  <details><summary>Explain Tableau’s Performance Recorder.</summary><p class="answer">A tool to record and analyze workbook performance bottlenecks.</p></details>
-  <details><summary>What is Tableau’s Hyper engine?</summary><p class="answer">In-memory columnar storage for high-speed data queries.</p></details>
-  <details><summary>How to design a complex security model in Tableau?</summary><p class="answer">Combining user filters, Active Directory groups, and row-level security.</p></details>
-  <!-- ...repeat all 33 advanced questions here -->
+  <h3>Advanced</h3>
+  <!-- 33 advanced questions -->
 </section>
 
-<!-- Similar structure for Python, SQL, Data Analytics, Project Management, Client Management, Machine Learning, Deep Learning sections -->
+<!-- Python Section -->
+<section id="python">
+  <h2>Python Interview Questions</h2>
+  <h3>Beginner</h3>
+  <!-- 33 beginner questions -->
+
+  <h3>Intermediate</h3>
+  <!-- 34 intermediate questions -->
+
+  <h3>Advanced</h3>
+  <!-- 33 advanced questions -->
+</section>
+
+<!-- SQL Section -->
+<section id="sql">
+  <h2>SQL Interview Questions</h2>
+  <h3>Beginner</h3>
+  <!-- 33 beginner questions -->
+
+  <h3>Intermediate</h3>
+  <!-- 34 intermediate questions -->
+
+  <h3>Advanced</h3>
+  <!-- 33 advanced questions -->
+</section>
+
+<!-- Data Analytics Section -->
+<section id="dataanalytics">
+  <h2>Data Analytics Interview Questions</h2>
+  <h3>Beginner</h3>
+  <!-- 33 beginner questions -->
+
+  <h3>Intermediate</h3>
+  <!-- 34 intermediate questions -->
+
+  <h3>Advanced</h3>
+  <!-- 33 advanced questions -->
+</section>
+
+<!-- Project Management Section -->
+<section id="projectmanagement">
+  <h2>Project Management Interview Questions</h2>
+  <h3>Beginner</h3>
+  <!-- 33 beginner questions -->
+
+  <h3>Intermediate</h3>
+  <!-- 34 intermediate questions -->
+
+  <h3>Advanced</h3>
+  <!-- 33 advanced questions -->
+</section>
+
+<!-- Client Management Section -->
+<section id="clientmanagement">
+  <h2>Client Management Interview Questions</h2>
+  <h3>Beginner</h3>
+  <!-- 33 beginner questions -->
+
+  <h3>Intermediate</h3>
+  <!-- 34 intermediate questions -->
+
+  <h3>Advanced</h3>
+  <!-- 33 advanced questions -->
+</section>
+
+<!-- Machine Learning Section -->
+<section id="machinelearning">
+  <h2>Machine Learning Interview Questions</h2>
+  <h3>Beginner</h3>
+  <!-- 33 beginner questions -->
+
+  <h3>Intermediate</h3>
+  <!-- 34 intermediate questions -->
+
+  <h3>Advanced</h3>
+  <!-- 33 advanced questions -->
+</section>
+
+<!-- Deep Learning Section -->
+<section id="deeplearning">
+  <h2>Deep Learning Interview Questions</h2>
+  <h3>Beginner</h3>
+  <!-- 33 beginner questions -->
+
+  <h3>Intermediate</h3>
+  <!-- 34 intermediate questions -->
+
+  <h3>Advanced</h3>
+  <!-- 33 advanced questions -->
+</section>
 
 </body>
 </html>
