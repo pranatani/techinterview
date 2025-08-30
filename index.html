@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tech Interview Questions</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f5f7fa;
+    color: #333;
+  }
+  header {
+    background: #24292e;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  nav {
+    background: #0366d6;
+    padding: 0.7rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  h2, h3 {
+    color: #0366d6;
+    border-bottom: 2px solid #0366d6;
+    padding-bottom: 0.2rem;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  details {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 0.8rem;
+    padding: 0.7rem 1rem;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] summary::before {
+    content:"▼ ";
+    color:#0366d6;
+  }
+  summary::before {
+    content:"▶ ";
+    color:#0366d6;
+  }
+  .answer {
+    margin-top: 0.3rem;
+    padding-left: 1.5rem;
+    line-height: 1.4;
+    color: #555;
+  }
+  @media (max-width: 600px) {
+    nav {
+      text-align: center;
+    }
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Tech Interview Questions</h1>
+</header>
+<nav>
+  <a href="#powerbi">Power BI</a>
+  <a href="#tableau">Tableau</a>
+  <a href="#python">Python</a>
+  <a href="#sql">SQL</a>
+  <a href="#dataanalytics">Data Analytics</a>
+  <a href="#projectmanagement">Project Management</a>
+  <a href="#clientmanagement">Client Management</a>
+  <a href="#machinelearning">Machine Learning</a>
+  <a href="#deeplearning">Deep Learning</a>
+</nav>
+<main>
+
+<!-- Power BI -->
+<section id="powerbi">
+  <h2>Power BI Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is Power BI?</summary>
+    <p class="answer">Power BI is a Microsoft business analytics tool for data visualization and sharing insights.</p>
+  </details>
+  <details>
+    <summary>What are the key components of Power BI?</summary>
+    <p class="answer">Power BI Desktop, Power BI Service, Power BI Mobile, and Power BI Report Server.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>Explain CALCULATE function in DAX.</summary>
+    <p class="answer">Used to modify filter context for calculations.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>How do you implement advanced Row-Level Security with dynamic roles?</summary>
+    <p class="answer">Using DAX expressions to filter data based on user metadata.</p>
+  </details>
+</section>
+
+<!-- Tableau -->
+<section id="tableau">
+  <h2>Tableau Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is Tableau?</summary>
+    <p class="answer">Tableau is a data visualization tool that converts data into interactive dashboards.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>How do you implement row-level security in Tableau?</summary>
+    <p class="answer">By creating user filters or using calculated fields referencing the user function.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>Explain Tableau’s Performance Recorder.</summary>
+    <p class="answer">A tool to record and analyze workbook performance bottlenecks.</p>
+  </details>
+</section>
+
+<!-- Python -->
+<section id="python">
+  <h2>Python Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is Python?</summary>
+    <p class="answer">Python is a high-level, interpreted programming language known for its readability and simplicity.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>What are Python decorators?</summary>
+    <p class="answer">Functions that modify behavior of other functions or methods.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>What are metaclasses in Python?</summary>
+    <p class="answer">Classes that define the behavior of other classes.</p>
+  </details>
+</section>
+
+<!-- SQL -->
+<section id="sql">
+  <h2>SQL Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is SQL?</summary>
+    <p class="answer">SQL (Structured Query Language) is a standard language to communicate with relational databases.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>What is a stored procedure?</summary>
+    <p class="answer">A precompiled collection of SQL statements.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>What is a materialized view?</summary>
+    <p class="answer">A stored query result for faster access to data.</p>
+  </details>
+</section>
+
+<!-- Data Analytics -->
+<section id="dataanalytics">
+  <h2>Data Analytics Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is Data Analytics?</summary>
+    <p class="answer">The process of examining raw data to make conclusions and informed decisions.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>What is dimensional modeling?</summary>
+    <p class="answer">Designing data efficient for querying with facts and dimension tables.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>What are advanced analytics techniques?</summary>
+    <p class="answer">Machine learning, predictive modeling, AI, simulation.</p>
+  </details>
+</section>
+
+<!-- Project Management -->
+<section id="projectmanagement">
+  <h2>Project Management Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is project management?</summary>
+    <p class="answer">The process of leading a team to achieve specific goals within defined timelines and budgets.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>Explain the difference between waterfall and agile methodologies.</summary>
+    <p class="answer">Waterfall is linear; agile is iterative and flexible.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>Explain Program and Portfolio Management.</summary>
+    <p class="answer">Program manages related projects; portfolio manages overall strategy.</p>
+  </details>
+</section>
+
+<!-- Client Management -->
+<section id="clientmanagement">
+  <h2>Client Management Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is client management?</summary>
+    <p class="answer">The process of building and maintaining relationships with clients to meet their needs and foster business growth.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>What is CRM and its importance?</summary>
+    <p class="answer">Customer Relationship Management system to track and manage client interactions.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>How do you handle client escalations for high-stakes projects?</summary>
+    <p class="answer">Structured problem-solving with executive support and clear communications.</p>
+  </details>
+</section>
+
+<!-- Machine Learning -->
+<section id="machinelearning">
+  <h2>Machine Learning Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is Machine Learning?</summary>
+    <p class="answer">A subset of AI that enables systems to learn and improve from data automatically.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>What is supervised learning?</summary>
+    <p class="answer">Machine learning using labeled data for training models.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>Explain overfitting and how to prevent it.</summary>
+    <p class="answer">When a model fits training data too closely; prevent using regularization, cross-validation.</p>
+  </details>
+</section>
+
+<!-- Deep Learning -->
+<section id="deeplearning">
+  <h2>Deep Learning Interview Questions</h2>
+  <h3>Beginner</h3>
+  <details>
+    <summary>What is Deep Learning?</summary>
+    <p class="answer">A subset of machine learning using neural networks with many layers.</p>
+  </details>
+  <h3>Intermediate</h3>
+  <details>
+    <summary>What is a Convolutional Neural Network (CNN)?</summary>
+    <p class="answer">A deep learning model mainly used for image data recognition.</p>
+  </details>
+  <h3>Advanced</h3>
+  <details>
+    <summary>Explain the vanishing gradient problem.</summary>
+    <p class="answer">During training, gradients shrink making weights updates ineffective, slowing learning.</p>
+  </details>
+</section>
+
+</main>
+</body>
+</html>
